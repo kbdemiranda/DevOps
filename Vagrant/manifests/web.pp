@@ -15,6 +15,13 @@ exec { 'musicjungle':
     require => Service["mysql"]
 }
 
+exec { 'mysql-password':
+    command => "mysql -uroot -e \"GRANT ALL PRIVILEGES ON * TO 'musicjungle'@'%' IDENTIFIED BY 'password';\" musicjungle",
+    unless  => "mysql -umusicjungle -ppassword musicjungle",
+    path => "/usr/bin",
+    require => Exec["musicjungle"]
+}
+
 package { ["openjdk-7-jre", "tomcat7", "mysql-server"]:
     ensure => installed,
     require => Exec["apt-update"]

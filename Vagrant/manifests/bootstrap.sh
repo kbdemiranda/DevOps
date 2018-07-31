@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e -x
 
+echo "nameserver 8.8.8.8" >> /etc/resolv.conf
+
 if which puppet > /dev/null ; then
     echo "Puppet is already installed"
     exit 0
