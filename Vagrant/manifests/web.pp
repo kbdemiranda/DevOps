@@ -15,7 +15,7 @@ exec { 'musicjungle':
     require => Service["mysql"]
 }
 
-package { ["openjdk-8-jre", "tomcat7", "mysql-server"]:
+package { ["openjdk-7-jre", "tomcat7", "mysql-server"]:
     ensure => installed,
     require => Exec["apt-update"]
 }
