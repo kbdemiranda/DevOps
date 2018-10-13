@@ -8,4 +8,4 @@
 <p>Instrutor:<a href="https://cursos.alura.com.br/user/alexander-ramos-jardim"> Alexander Jardim </a></p>
 <hr/>
 <p>Curso:<a href="https://www.alura.com.br/curso-online-docker-e-docker-compose"> Curso Docker: Criando containers sem dor de cabeça</a></p>
-<p>Instrutor:<a href="https://cursos.alura.com.br/user/alexander-ramos-jardim"> Douglas Quintanilha </a></p>
+<p>Instrutor:<a href="https://cursos.alura.com.br/user/douglasquintanilha"> Douglas Quintanilha </a></p>
